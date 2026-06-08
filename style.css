@@ -20,6 +20,53 @@ body {
 }
 
 /* ------------------------------
+   Navigation Bar
+------------------------------ */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(15, 23, 42, 0.94);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 10%;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 6%;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.nav-links a {
+  color: #dbeafe;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* ------------------------------
    Typography
 ------------------------------ */
 
