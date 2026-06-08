@@ -225,6 +225,44 @@
     </section>
 
   </main>
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close project details">&times;</button>
 
+    <div class="modal-header">
+      <p id="modalCategory" class="modal-category"></p>
+      <h2 id="modalTitle"></h2>
+      <p id="modalSummary" class="modal-summary"></p>
+    </div>
+
+    <div id="modalGallery" class="modal-gallery"></div>
+
+    <div class="modal-body">
+      <div class="modal-section">
+        <h3>Project Overview</h3>
+        <p id="modalOverview"></p>
+      </div>
+
+      <div class="modal-section">
+        <h3>Methods & Workflow</h3>
+        <ul id="modalMethods"></ul>
+      </div>
+
+      <div class="modal-section">
+        <h3>Outputs & Contribution</h3>
+        <ul id="modalOutputs"></ul>
+      </div>
+
+      <div class="modal-section">
+        <h3>Tools & Technologies</h3>
+        <div id="modalTools" class="modal-tags"></div>
+      </div>
+
+      <div id="modalLinks" class="modal-links"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
