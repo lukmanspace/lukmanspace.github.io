@@ -78,91 +78,121 @@
     </section>
 
     <section id="projects" class="projects">
-      <h2>Selected Projects</h2>
+  <h2>Selected Projects</h2>
+  <p class="section-intro">
+    A selection of geospatial, remote sensing, conservation planning, and spatial decision-support projects.
+    Click each project to view the full case study.
+  </p>
 
-      <div class="project-grid">
+  <div class="project-grid">
 
-        <article class="card">
-          <h3>Marine Protected Area Network Design</h3>
-          <p>
-            Supported the design and optimization of Marine Protected Area
-            networks using MARXAN, gap analysis, and spatial prioritization.
-            The work focused on improving protection for shallow-water habitats,
-            deep-water habitats, and key conservation features using principles
-            of connectivity, adequacy, representativeness, and efficiency.
-          </p>
-          <p class="tools">Tools: MARXAN, QGIS, ArcGIS, spatial prioritization, conservation planning</p>
-        </article>
-
-        <article class="card">
-          <h3>Green Roof Detection in Baden-Württemberg</h3>
-          <p>
-            Developed geospatial workflows for identifying green roof areas using
-            LoD2 building geometry and PlanetScope imagery. The project involved
-            roof-plane data preparation, feature extraction, quality control, and
-            machine-learning-ready datasets for a 2025 green roof inventory.
-          </p>
-          <p class="tools">Tools: Python, GeoPandas, PlanetScope, LoD2 CityGML, machine learning</p>
-        </article>
-
-        <article class="card">
-          <h3>Stuttgart Landfill Suitability Analysis</h3>
-          <p>
-            Conducted GIS-based site suitability analysis for landfill location
-            planning. The workflow considered spatial constraints, exclusion
-            zones, accessibility, environmental sensitivity, and planning-relevant
-            criteria to identify suitable candidate areas.
-          </p>
-          <p class="tools">Tools: QGIS, ArcGIS Pro, multi-criteria analysis, spatial overlay</p>
-        </article>
-
-        <article class="card">
-          <h3>IKEA Franchise Location Expansion Analysis</h3>
-          <p>
-            Applied GIS-based business location analysis to support potential
-            franchise expansion. The analysis considered accessibility,
-            population distribution, market reach, transport connectivity, and
-            spatial competition factors.
-          </p>
-          <p class="tools">Tools: GIS, accessibility analysis, market area analysis, spatial decision support</p>
-        </article>
-
-        <article class="card">
-          <h3>Urban Vegetation Mapping</h3>
-          <p>
-            Contributed to urban vegetation mapping using high-resolution aerial
-            imagery and deep learning methods. The project focused on extracting
-            vegetation information from complex urban environments to support
-            urban ecological assessment and green infrastructure analysis.
-          </p>
-          <p class="tools">Tools: Aerial imagery, deep learning, image classification, GIS</p>
-        </article>
-
-        <article class="card">
-          <h3>Multitemporal Mangrove and Aquaculture Mapping</h3>
-          <p>
-            Developed remote-sensing workflows for mapping mangrove and
-            aquaculture dynamics over time. The work used multi-temporal
-            satellite imagery to monitor coastal landscape change and support
-            environmental management in Indonesia.
-          </p>
-          <p class="tools">Tools: Google Earth Engine, Landsat, Sentinel, Planet NICFI, change detection</p>
-        </article>
-
-        <article class="card">
-          <h3>Shallow-Water Habitat Mapping</h3>
-          <p>
-            Applied remote sensing methods to classify shallow-water habitats,
-            including coral, seagrass, sand, and rubble. The project supported
-            coastal and marine conservation planning through spatial habitat
-            information for Indonesian coastal waters.
-          </p>
-          <p class="tools">Tools: Satellite imagery, remote sensing, habitat classification, coastal GIS</p>
-        </article>
-
+    <article class="card project-card" data-project="mpa">
+      <div class="project-card-image">
+        <img src="assets/images/projects/mpa-network-1.jpg" alt="Marine Protected Area network design map" />
       </div>
-    </section>
+      <div class="project-card-content">
+        <h3>Marine Protected Area Network Design</h3>
+        <p>
+          Spatial prioritization and MARXAN-based conservation planning for shallow-water,
+          deep-water, and key biodiversity features.
+        </p>
+        <p class="tools">MARXAN · QGIS · Conservation Planning · Spatial Prioritization</p>
+        <button class="project-button">View Case Study</button>
+      </div>
+    </article>
 
+    <article class="card project-card" data-project="greenRoof">
+      <div class="project-card-image">
+        <img src="assets/images/projects/green-roof-1.jpg" alt="Green roof detection map" />
+      </div>
+      <div class="project-card-content">
+        <h3>Green Roof Detection in Baden-Württemberg</h3>
+        <p>
+          Machine learning workflow for identifying vegetated roof surfaces using LoD2 roof geometry
+          and PlanetScope satellite imagery.
+        </p>
+        <p class="tools">Python · GeoPandas · PlanetScope · LoD2 · Machine Learning</p>
+        <button class="project-button">View Case Study</button>
+      </div>
+    </article>
+
+    <article class="card project-card" data-project="landfill">
+      <div class="project-card-image">
+        <img src="assets/images/projects/landfill-1.jpg" alt="Landfill suitability analysis map" />
+      </div>
+      <div class="project-card-content">
+        <h3>Stuttgart Landfill Suitability Analysis</h3>
+        <p>
+          GIS-based multi-criteria suitability analysis for identifying potential landfill locations
+          using environmental and planning constraints.
+        </p>
+        <p class="tools">QGIS · ArcGIS Pro · Multi-Criteria Analysis · Spatial Overlay</p>
+        <button class="project-button">View Case Study</button>
+      </div>
+    </article>
+
+    <article class="card project-card" data-project="ikea">
+      <div class="project-card-image">
+        <img src="assets/images/projects/ikea-1.jpg" alt="IKEA franchise location analysis map" />
+      </div>
+      <div class="project-card-content">
+        <h3>IKEA Franchise Location Expansion Analysis</h3>
+        <p>
+          GIS-based business location analysis considering accessibility, population distribution,
+          transport connectivity, and market reach.
+        </p>
+        <p class="tools">GIS · Accessibility · Market Area Analysis · Location Intelligence</p>
+        <button class="project-button">View Case Study</button>
+      </div>
+    </article>
+
+    <article class="card project-card" data-project="urbanVegetation">
+      <div class="project-card-image">
+        <img src="assets/images/projects/urban-vegetation-1.jpg" alt="Urban vegetation mapping result" />
+      </div>
+      <div class="project-card-content">
+        <h3>Urban Vegetation Mapping</h3>
+        <p>
+          High-resolution aerial imagery and deep-learning-based vegetation mapping for urban
+          green infrastructure analysis.
+        </p>
+        <p class="tools">Aerial Imagery · Deep Learning · Image Classification · GIS</p>
+        <button class="project-button">View Case Study</button>
+      </div>
+    </article>
+
+    <article class="card project-card" data-project="mangrove">
+      <div class="project-card-image">
+        <img src="assets/images/projects/mangrove-1.jpg" alt="Mangrove and aquaculture change detection map" />
+      </div>
+      <div class="project-card-content">
+        <h3>Multitemporal Mangrove and Aquaculture Mapping</h3>
+        <p>
+          Remote sensing workflow for monitoring mangrove and aquaculture dynamics using
+          multi-temporal satellite imagery.
+        </p>
+        <p class="tools">Google Earth Engine · Landsat · Sentinel · Planet NICFI · Change Detection</p>
+        <button class="project-button">View Case Study</button>
+      </div>
+    </article>
+
+    <article class="card project-card" data-project="habitat">
+      <div class="project-card-image">
+        <img src="assets/images/projects/habitat-1.jpg" alt="Shallow-water habitat classification map" />
+      </div>
+      <div class="project-card-content">
+        <h3>Shallow-Water Habitat Mapping</h3>
+        <p>
+          Remote sensing classification of coral, seagrass, sand, and rubble habitats for Indonesian
+          coastal waters.
+        </p>
+        <p class="tools">Remote Sensing · Coastal GIS · Habitat Classification · Satellite Imagery</p>
+        <button class="project-button">View Case Study</button>
+      </div>
+    </article>
+
+  </div>
+</section>
     <section id="publications" class="publications">
       <h2>Selected Publications</h2>
 
