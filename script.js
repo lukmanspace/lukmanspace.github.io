@@ -82,38 +82,51 @@ const projectData = {
 
   greenRoof: {
     category: "Remote Sensing & Machine Learning",
-    title: "Green Roof Detection in Baden-Württemberg",
+    title: "Green Roof Detection in Baden-Wuerttemberg",
     summary:
-      "Roof-plane-level green roof detection using LoD2 building geometry, PlanetScope imagery, and machine learning.",
+      "Scalable roof-plane classification for vegetated rooftop detection using LoD2 3D building data, PlanetScope imagery, and machine learning.",
     images: [
-      "assets/images/projects/green-roof-1.jpg",
-      "assets/images/projects/green-roof-2.jpg"
+      "assets/images/green-roof-detection.png"
     ],
     overview:
-      "This project developed a geospatial machine learning workflow to detect vegetated roof surfaces across Baden-Württemberg. The workflow combined LoD2 roof-plane geometry, semantic building attributes, and PlanetScope satellite imagery to support the creation of a 2025 green roof inventory.",
+      "This thesis project developed a scalable geospatial workflow for detecting green roofs at roof-plane level across Baden-Wuerttemberg. The approach combines LoD2 3D building roof surfaces, semantic building information, and PlanetScope monthly basemap imagery to classify vegetated and non-vegetated roofs and support a reproducible 2025 green roof inventory.",
     methods: [
-      "Processed LoD2 CityGML roof-plane geometries and derived geometric features such as area, slope, aspect, and height-related attributes.",
-      "Extracted satellite-derived spectral features from PlanetScope imagery for roof-plane-level classification.",
-      "Prepared machine-learning-ready spatial datasets using Python and GeoPandas.",
-      "Applied quality control and reproducible geodata processing steps for large-scale official spatial datasets.",
-      "Evaluated model performance and prepared outputs for state-scale green roof inventory mapping."
+      "Ingested LoD2 CityGML data, handled namespaces, decoded roof-surface vertices, and extracted roof-plane objects.",
+      "Derived roof-plane descriptors including footprint geometry, 3D area, slope, aspect, height, height relief, roof type, and building function.",
+      "Integrated PlanetScope monthly basemaps and computed roof-level spectral indicators, including NDVI aggregates, pixel counts, and alpha-band quality measures.",
+      "Prepared labelled green and non-green roof samples, using approximately 60% visible vegetation coverage as the practical green-roof rule of thumb.",
+      "Compared Random Forest and Multilayer Perceptron models under the same feature set and evaluation strategy.",
+      "Assessed probability thresholds and post-processing rules to understand their effect on final inventory size and spatial distribution."
     ],
     outputs: [
-      "Roof-plane-level green roof prediction layers.",
-      "Feature extraction and preprocessing workflows.",
-      "Machine-learning-ready geospatial datasets.",
-      "Inventory-oriented outputs supporting public-sector green infrastructure analysis."
+      "Roof-plane-level green roof classification workflow for state-scale inventory mapping.",
+      "Machine-learning-ready feature tables combining geometry, semantics, and satellite-derived spectral attributes.",
+      "Model comparison outputs for Random Forest and Multilayer Perceptron classification.",
+      "Probability-based prediction outputs and post-processed green roof inventory layers.",
+      "Thesis and poster materials communicating the methodology, limitations, and planning relevance."
     ],
     tools: [
       "Python",
       "GeoPandas",
       "PlanetScope",
       "LoD2 CityGML",
+      "Random Forest",
+      "Multilayer Perceptron",
+      "NDVI",
       "scikit-learn",
       "QGIS",
       "Machine Learning"
     ],
-    links: []
+    links: [
+      {
+        label: "Open Thesis PDF",
+        url: "assets/files/Thesis.pdf"
+      },
+      {
+        label: "Open Poster PDF",
+        url: "assets/files/poster_Hakim_WiSe202526.pdf"
+      }
+    ]
   },
 
   landfill: {
