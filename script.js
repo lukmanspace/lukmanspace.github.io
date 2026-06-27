@@ -1,36 +1,83 @@
 const projectData = {
-  mpa: {
+  seaMpa: {
     category: "Conservation Planning",
-    title: "Marine Protected Area Network Design",
+    title: "SEA Project: MPA Network Design in Indonesia",
     summary:
-      "Spatial prioritization and MARXAN-based conservation planning to support a resilient Marine Protected Area network.",
+      "Marxan-based MPA network design for Fisheries Management Area 715 and six associated provinces in eastern Indonesia.",
     images: [
-      "assets/images/projects/mpa-network-1.jpg",
-      "assets/images/projects/mpa-network-2.jpg"
+      "assets/images/sea-project.jpg"
     ],
     overview:
-      "This project focused on supporting the design and optimization of Marine Protected Area networks using spatial prioritization methods. The analysis considered shallow-water habitats, deep-water habitats, and key biodiversity or conservation features. The main objective was to support an ecologically representative and efficient conservation network guided by the principles of connectivity, adequacy, representativeness, and efficiency.",
+      "Under the USAID Sustainable Ecosystems Advanced (SEA) Project, this work supported The Nature Conservancy, MMAF Indonesia, and Coral Triangle Center in designing Marine Protected Area networks for Fisheries Management Area 715 and six associated provinces: West Papua, Maluku, North Maluku, North Sulawesi, Central Sulawesi, and Gorontalo. The work translated scientific design criteria, ecological features, threats, and existing/proposed protected areas into a spatial decision-support process for MPA and marine spatial planning.",
     methods: [
-      "Prepared and harmonized spatial datasets representing habitats, conservation features, planning units, and management zones.",
-      "Applied MARXAN-based spatial prioritization to identify efficient conservation configurations.",
-      "Used gap analysis to evaluate how well existing and proposed areas represented key ecological features.",
-      "Supported interpretation of spatial prioritization outputs for conservation planning and stakeholder communication."
+      "Compiled and processed spatial layers from BIG, MMAF, participatory expert mapping, Global Fishing Watch, Global Seafloor, and YKAN.",
+      "Delineated a 1,613,457 km2 planning area and stratified the analysis by province and ecoregion to represent political and ecological variation.",
+      "Ran Marxan in two stages: first for shallow-water habitats, then a combined shallow- and deep-water analysis with the shallow-water best solution locked in.",
+      "Explored scenarios using conservation targets, costs, locked-in and locked-out areas, and compactness settings to reduce fragmentation.",
+      "Reviewed Marxan outputs through scientific workshop discussion and manual refinement of priority areas."
     ],
     outputs: [
-      "Decision-support maps for Marine Protected Area network planning.",
-      "Spatial prioritization outputs identifying important conservation areas.",
-      "Technical map products and geospatial datasets for interdisciplinary conservation work.",
-      "Contribution to conservation planning workflows involving NGOs, researchers, and government stakeholders."
+      "MPA network design for FMA 715 and six associated provinces in eastern Indonesia.",
+      "Spatial prioritization outputs from 100 Marxan runs, including individual solutions, sum solution, and best solution products.",
+      "Decision-support maps showing existing MPAs, proposed MPAs, and priority areas for new or expanded protection.",
+      "Cartographic contribution to the published MPA network design map for the SEA Project.",
+      "Technical support for integrating MPA network priorities with marine spatial planning and fisheries management objectives."
     ],
     tools: [
-      "MARXAN",
+      "Marxan",
       "QGIS",
       "ArcGIS",
       "Spatial Prioritization",
-      "Gap Analysis",
-      "Conservation Planning"
+      "Marine Spatial Planning",
+      "Conservation Planning",
+      "Participatory Mapping"
     ],
-    links: []
+    links: [
+      {
+        label: "View Marxan Case Study",
+        url: "https://marxansolutions.org/community/designing-marine-protected-area-networks-in-indonesia/"
+      }
+    ]
+  },
+
+  atseaMpa: {
+    category: "Transboundary Conservation Planning",
+    title: "ATSEA-2: Arafura-Timor Seas MPA Network",
+    summary:
+      "Regional gap analysis and systematic conservation planning for a resilient MPA network across the Arafura and Timor Seas.",
+    images: [
+      "assets/images/atsea-project.jpg"
+    ],
+    overview:
+      "The ATSEA-2 project developed the first resilient Marine Protected Area network design for the Arafura and Timor Seas, a transboundary region shared by Indonesia, Timor-Leste, Australia, and Papua New Guinea. The design addressed critical habitats and species, fisheries connectivity, rare and threatened species, existing and proposed MPAs, and pressures such as fishing and climate change.",
+    methods: [
+      "Used GIS processing to assess gaps in the regional MPA network based on existing protected areas, proposed MPAs, and Areas of Interest in each country.",
+      "Applied systematic conservation planning to identify new Areas of Interest for establishing MPAs that fill representation and connectivity gaps.",
+      "Considered transboundary ecological features, shallow-water habitats, deepwater habitats, critical habitats, special and unique habitats, threats, and other marine uses.",
+      "Used Marxan outputs to support network design, conflict review, and refinement of priority areas.",
+      "Linked technical spatial analysis with regional review so the network could be considered by all four littoral countries."
+    ],
+    outputs: [
+      "A 301,055 km2 ATS MPA network design endorsed by Indonesia, Timor-Leste, Australia, and Papua New Guinea.",
+      "Regional network incorporating 93 existing MPAs, proposed MPAs, previously identified Areas of Interest, and seven new Areas of Interest from the study.",
+      "Evidence base for Indonesia's national MPA network planning, Timor-Leste MPA development, and Australian consideration of potential new MPAs.",
+      "Publication contribution to the Coastal Management article on resilient MPA network design in the Arafura and Timor Seas.",
+      "Spatial decision-support products for communicating conservation priorities across a multi-country marine region."
+    ],
+    tools: [
+      "Marxan",
+      "GIS",
+      "Gap Analysis",
+      "Systematic Conservation Planning",
+      "Transboundary Conservation",
+      "Marine Protected Areas"
+    ],
+    links: [
+      {
+        label: "Open ATSEA-2 PDF",
+        url: "assets/files/atsea.pdf"
+      }
+    ]
   },
 
   greenRoof: {
