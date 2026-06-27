@@ -1,35 +1,39 @@
 const projectData = {
   seaMpa: {
-    category: "Conservation Planning",
-    title: "SEA Project: MPA Network Design in Indonesia",
+    category: "Marine Spatial Planning",
+    title: "Marine Protected Area Network Design for FMA715",
     summary:
-      "Marxan-based MPA network design for Fisheries Management Area 715 and six associated provinces in eastern Indonesia.",
+      "A large-scale MPA network design for eastern Indonesia using GIS, Marxan, marine gap analysis, participatory expert mapping, habitat targets, and spatial constraints.",
     images: [
-      "assets/images/sea-project.jpg"
+      "assets/images/sea-project.jpg",
+      "assets/images/sea-shallow.jpg",
+      "assets/images/sea-deep.jpg",
+      "assets/images/sea-threat.jpg"
     ],
     overview:
-      "Under the USAID Sustainable Ecosystems Advanced (SEA) Project, this work supported The Nature Conservancy, MMAF Indonesia, and Coral Triangle Center in designing Marine Protected Area networks for Fisheries Management Area 715 and six associated provinces: West Papua, Maluku, North Maluku, North Sulawesi, Central Sulawesi, and Gorontalo. The work translated scientific design criteria, ecological features, threats, and existing/proposed protected areas into a spatial decision-support process for MPA and marine spatial planning.",
+      "This project designed a Marine Protected Area network for Fisheries Management Area 715 and six associated provinces in eastern Indonesia: West Papua, Maluku, North Maluku, North Sulawesi, Central Sulawesi, and Gorontalo. The work connected fisheries management, marine spatial planning, and national protected-area expansion goals through a GIS-based conservation planning workflow.",
     methods: [
-      "Compiled and processed spatial layers from BIG, MMAF, participatory expert mapping, Global Fishing Watch, Global Seafloor, and YKAN.",
-      "Delineated a 1,613,457 km2 planning area and stratified the analysis by province and ecoregion to represent political and ecological variation.",
-      "Ran Marxan in two stages: first for shallow-water habitats, then a combined shallow- and deep-water analysis with the shallow-water best solution locked in.",
-      "Explored scenarios using conservation targets, costs, locked-in and locked-out areas, and compactness settings to reduce fragmentation.",
-      "Reviewed Marxan outputs through scientific workshop discussion and manual refinement of priority areas."
+      "Delineated a planning area of approximately 1.61 million km2, covering about 49.5% of Indonesia's marine waters.",
+      "Compiled a large spatial database covering MPA status, shallow-water habitats, deepwater habitats, critical species areas, cultural sites, threats, and other marine uses.",
+      "Ran Marxan in two stages: a shallow-water analysis using smaller planning units, then a combined shallow- and deepwater analysis using larger offshore planning units.",
+      "Used locked-in, locked-out, and weighted cost-surface layers to account for existing MPAs, proposed MPAs, ports, military zones, oil and gas areas, underwater cables, fisheries, and other constraints.",
+      "Combined systematic conservation planning with expert workshops and provincial stakeholder input to validate and refine Areas of Interest."
     ],
     outputs: [
-      "MPA network design for FMA 715 and six associated provinces in eastern Indonesia.",
-      "Spatial prioritization outputs from 100 Marxan runs, including individual solutions, sum solution, and best solution products.",
-      "Decision-support maps showing existing MPAs, proposed MPAs, and priority areas for new or expanded protection.",
-      "Cartographic contribution to the published MPA network design map for the SEA Project.",
-      "Technical support for integrating MPA network priorities with marine spatial planning and fisheries management objectives."
+      "MPA network design for FMA715 and six associated provinces.",
+      "122 existing and proposed MPAs covering about 10.1 million hectares, plus 44 Areas of Interest covering about 5.3 million hectares.",
+      "Decision-support maps for shallow-water habitats, deepwater habitats, cost surfaces, existing MPAs, proposed MPAs, and priority Areas of Interest.",
+      "Contribution to GIS processing, conservation feature preparation, Marxan input support, gap analysis, and map-based planning outputs."
     ],
     tools: [
-      "Marxan",
-      "QGIS",
+      "GIS",
       "ArcGIS",
-      "Spatial Prioritization",
+      "Marxan",
       "Marine Spatial Planning",
-      "Conservation Planning",
+      "Marine Gap Analysis",
+      "Cost Surface Modeling",
+      "Hexagonal Planning Units",
+      "MPA Network Design",
       "Participatory Mapping"
     ],
     links: [
@@ -42,223 +46,210 @@ const projectData = {
 
   atseaMpa: {
     category: "Transboundary Conservation Planning",
-    title: "ATSEA-2: Arafura-Timor Seas MPA Network",
+    title: "Resilient MPA Network for the Arafura and Timor Seas",
     summary:
-      "Regional gap analysis and systematic conservation planning for a resilient MPA network across the Arafura and Timor Seas.",
+      "A transboundary MPA network design for the Arafura and Timor Seas using GIS, Marxan, protected-area gap analysis, cost surfaces, and stakeholder-informed spatial planning.",
     images: [
-      "assets/images/atsea-project.jpg"
+      "assets/images/atsea-project.jpg",
+      "assets/images/atsea-area.jpg",
+      "assets/images/atsea-shallow.jpg",
+      "assets/images/atsea-deep.jpg",
+      "assets/images/atsea-kef.jpg",
+      "assets/images/atsea-threat.jpg",
+      "assets/images/atsea-cost.jpg",
+      "assets/images/atsea-result.jpg"
     ],
     overview:
-      "The ATSEA-2 project developed the first resilient Marine Protected Area network design for the Arafura and Timor Seas, a transboundary region shared by Indonesia, Timor-Leste, Australia, and Papua New Guinea. The design addressed critical habitats and species, fisheries connectivity, rare and threatened species, existing and proposed MPAs, and pressures such as fishing and climate change.",
+      "This project supported the design of a climate-resilient Marine Protected Area network for the Arafura and Timor Seas, a transboundary marine region shared by Indonesia, Timor-Leste, Australia, and Papua New Guinea. The work integrated conservation features, human-use constraints, marine threats, existing and proposed MPAs, and Areas of Interest into a regional spatial planning workflow.",
     methods: [
-      "Used GIS processing to assess gaps in the regional MPA network based on existing protected areas, proposed MPAs, and Areas of Interest in each country.",
-      "Applied systematic conservation planning to identify new Areas of Interest for establishing MPAs that fill representation and connectivity gaps.",
-      "Considered transboundary ecological features, shallow-water habitats, deepwater habitats, critical habitats, special and unique habitats, threats, and other marine uses.",
-      "Used Marxan outputs to support network design, conflict review, and refinement of priority areas.",
-      "Linked technical spatial analysis with regional review so the network could be considered by all four littoral countries."
+      "Prepared regional GIS layers for shallow-water habitats, deepwater habitats, key ecological features, existing and proposed MPAs, human uses, and threats.",
+      "Used marine gap analysis to identify underrepresented habitats and priority ecological features across the ATS region.",
+      "Developed weighted cost surfaces to reduce conflict with fishing pressure, shipping lanes, ports, oil and gas areas, cables, military zones, and other marine uses.",
+      "Applied Marxan in staged shallow-water and combined shallow/deepwater analyses with locked-in and locked-out planning constraints.",
+      "Supported stakeholder-informed refinement through regional review involving governments, scientists, NGOs, community representatives, and private-sector actors."
     ],
     outputs: [
-      "A 301,055 km2 ATS MPA network design endorsed by Indonesia, Timor-Leste, Australia, and Papua New Guinea.",
-      "Regional network incorporating 93 existing MPAs, proposed MPAs, previously identified Areas of Interest, and seven new Areas of Interest from the study.",
-      "Evidence base for Indonesia's national MPA network planning, Timor-Leste MPA development, and Australian consideration of potential new MPAs.",
-      "Publication contribution to the Coastal Management article on resilient MPA network design in the Arafura and Timor Seas.",
-      "Spatial decision-support products for communicating conservation priorities across a multi-country marine region."
+      "A 301,055 km2 ATS MPA network design endorsed by the four ATS countries.",
+      "Network design including 93 existing and proposed MPAs, 13 previously identified Areas of Interest, and seven new Areas of Interest.",
+      "Spatial products showing conservation features, threats, cost surfaces, priority areas, and final network design.",
+      "Contribution to GIS processing, conservation-feature mapping, gap analysis, Marxan input development, and interpretation of planning trade-offs."
     ],
     tools: [
-      "Marxan",
       "GIS",
-      "Gap Analysis",
+      "ArcGIS",
+      "Marxan",
+      "Marine Gap Analysis",
       "Systematic Conservation Planning",
-      "Transboundary Conservation",
-      "Marine Protected Areas"
+      "Cost Surface Modeling",
+      "Transboundary GIS",
+      "MPA Network Design"
     ],
-    links: [
-      {
-        label: "Open ATSEA-2 PDF",
-        url: "assets/files/atsea.pdf"
-      }
-    ]
+    links: []
+  },
+
+  urbanVegetation: {
+    category: "Urban Remote Sensing & Deep Learning",
+    title: "Stuttgart Urban Vegetation Mapping",
+    summary:
+      "U-Net semantic segmentation and YOLOv11 object detection for mapping tall and flat vegetation from high-resolution RGB and RGB+NIR aerial imagery.",
+    images: [
+      "assets/images/segmentation.jpg",
+      "assets/images/detection.jpg"
+    ],
+    overview:
+      "This project mapped urban vegetation from high-resolution aerial orthophotos of Stuttgart, Germany. The imagery was provided by the Stadtmessungsamt Stuttgart and included RGB and near-infrared bands at 8 cm ground sample distance. The project tested how computer vision models can support automatic detection and classification of vegetation in dense urban environments.",
+    methods: [
+      "Tiled high-resolution aerial imagery into smaller patches and manually annotated vegetation samples with LabelStudio.",
+      "Separated vegetation into tall vegetation, such as trees and shrubs, and flat vegetation, such as grass and cultivated areas.",
+      "Implemented U-Net semantic segmentation in PyTorch to classify vegetation at pixel level.",
+      "Applied YOLOv11 object detection to localize vegetation features with bounding boxes.",
+      "Compared RGB and RGB+NIR inputs and tested model generalization on out-of-distribution aerial imagery from Mannheim."
+    ],
+    outputs: [
+      "Semantic segmentation outputs for precise vegetation boundaries.",
+      "Object detection outputs for approximate localization and counting.",
+      "Best semantic segmentation performance of 65.7% IoU and approximately 84% F1-score.",
+      "Best object detection performance of 56.2% mAP50.",
+      "Contribution to aerial image preparation, annotation, model experimentation, evaluation, and interpretation."
+    ],
+    tools: [
+      "Python",
+      "PyTorch",
+      "U-Net",
+      "YOLOv11",
+      "LabelStudio",
+      "RGB/NIR Imagery",
+      "Semantic Segmentation",
+      "Object Detection",
+      "GIS"
+    ],
+    links: []
   },
 
   greenRoof: {
     category: "Remote Sensing & Machine Learning",
     title: "Green Roof Detection in Baden-Wuerttemberg",
     summary:
-      "Scalable roof-plane classification for vegetated rooftop detection using LoD2 3D building data, PlanetScope imagery, and machine learning.",
+      "A state-scale green roof detection workflow integrating LoD2 CityGML roof-plane geometry, PlanetScope multispectral imagery, NDVI feature extraction, and supervised machine learning.",
     images: [
+      "assets/images/green_roof_poster.jpg",
       "assets/images/green-roof-detection.png"
     ],
     overview:
-      "This thesis project developed a scalable geospatial workflow for detecting green roofs at roof-plane level across Baden-Wuerttemberg. The approach combines LoD2 3D building roof surfaces, semantic building information, and PlanetScope monthly basemap imagery to classify vegetated and non-vegetated roofs and support a reproducible 2025 green roof inventory.",
+      "For this master's thesis project, I developed a roof-plane-level green roof detection workflow for Baden-Wuerttemberg, Germany. The goal was to create a scalable 2025 green roof inventory by combining official LoD2 CityGML building models with multispectral PlanetScope satellite imagery in a supervised machine learning framework.",
     methods: [
-      "Ingested LoD2 CityGML data, handled namespaces, decoded roof-surface vertices, and extracted roof-plane objects.",
-      "Derived roof-plane descriptors including footprint geometry, 3D area, slope, aspect, height, height relief, roof type, and building function.",
-      "Integrated PlanetScope monthly basemaps and computed roof-level spectral indicators, including NDVI aggregates, pixel counts, and alpha-band quality measures.",
-      "Prepared labelled green and non-green roof samples, using approximately 60% visible vegetation coverage as the practical green-roof rule of thumb.",
-      "Compared Random Forest and Multilayer Perceptron models under the same feature set and evaluation strategy.",
-      "Assessed probability thresholds and post-processing rules to understand their effect on final inventory size and spatial distribution."
+      "Extracted geometric and semantic features from LoD2 roof surfaces, including slope, area, aspect, height, roof type, and building function.",
+      "Combined roof-plane features with seasonal spectral indicators from PlanetScope winter and summer imagery, especially NDVI-based vegetation statistics.",
+      "Manually labelled roof planes in Stuttgart, Karlsruhe, Freiburg im Breisgau, and Tuebingen.",
+      "Compared Random Forest and Multilayer Perceptron models using Leave-One-City-Out validation to test cross-city generalization.",
+      "Generated probability-based threshold layers ranging from balanced detection to high-confidence green roof candidates."
     ],
     outputs: [
-      "Roof-plane-level green roof classification workflow for state-scale inventory mapping.",
-      "Machine-learning-ready feature tables combining geometry, semantics, and satellite-derived spectral attributes.",
-      "Model comparison outputs for Random Forest and Multilayer Perceptron classification.",
-      "Probability-based prediction outputs and post-processed green roof inventory layers.",
-      "Thesis and poster materials communicating the methodology, limitations, and planning relevance."
+      "Probability-based 2025 green roof inventory for Baden-Wuerttemberg.",
+      "Machine-learning-ready geospatial feature tables combining geometry, semantics, and spectral attributes.",
+      "Model comparison showing Random Forest outperforming the MLP baseline.",
+      "Feature importance and ablation results highlighting NDVI, roof area, slope, height, and semantic attributes.",
+      "Planning-oriented candidate layers for exploratory analysis, municipal reporting, and manual verification."
     ],
     tools: [
       "Python",
       "GeoPandas",
-      "PlanetScope",
-      "LoD2 CityGML",
-      "Random Forest",
-      "Multilayer Perceptron",
-      "NDVI",
-      "scikit-learn",
+      "Rasterio",
+      "GDAL",
       "QGIS",
-      "Machine Learning"
+      "scikit-learn",
+      "CityGML/LoD2",
+      "PlanetScope",
+      "NDVI",
+      "Random Forest",
+      "MLP"
     ],
-    links: [
-      {
-        label: "Open Thesis PDF",
-        url: "assets/files/Thesis.pdf"
-      },
-      {
-        label: "Open Poster PDF",
-        url: "assets/files/poster_Hakim_WiSe202526.pdf"
-      }
-    ]
+    links: []
   },
 
   landfill: {
     category: "GIS Suitability Analysis",
-    title: "Stuttgart Landfill Suitability Analysis",
+    title: "Stuttgart Fuzzy GIS-Based Landfill Suitability Analysis",
     summary:
-      "GIS-based multi-criteria analysis for identifying suitable landfill candidate areas.",
+      "A raster-based GIS suitability model for landfill allocation in Eastern Baden-Wuerttemberg using fuzzy membership functions, weighted scoring, and multiplicative overlay.",
     images: [
-      "assets/images/projects/landfill-1.jpg",
-      "assets/images/projects/landfill-2.jpg"
+      "assets/images/fuzzy_scoring.jpg",
+      "assets/images/fuzzy_overlay.jpg"
     ],
     overview:
-      "This project applied GIS-based suitability analysis to evaluate potential landfill locations in the Stuttgart region. The workflow integrated spatial constraints, exclusion areas, environmental sensitivity, accessibility, and planning-relevant criteria to identify candidate zones.",
+      "This project identified suitable landfill allocation areas in Eastern Baden-Wuerttemberg using a raster-based fuzzy GIS suitability model. Instead of treating suitability as a rigid yes-or-no condition, the analysis represented gradual environmental, topographic, geological, and accessibility conditions with fuzzy membership values from 0 to 1.",
     methods: [
-      "Collected and prepared spatial layers related to land use, settlement areas, transport access, environmental constraints, and exclusion zones.",
-      "Applied buffer analysis, spatial overlay, and reclassification to model suitability conditions.",
-      "Combined multiple criteria into a suitability assessment workflow.",
-      "Produced map outputs showing unsuitable, moderately suitable, and potentially suitable areas."
+      "Prepared elevation, hydrographic, road, settlement, and geological protection datasets.",
+      "Derived slope and aspect from a DEM and generated Euclidean distance rasters for rivers, roads, settlements, and aquifer boundaries.",
+      "Converted each criterion into fuzzy membership rasters using raster calculator expressions and linear membership functions.",
+      "Compared a weighted scoring model with a stricter multiplicative fuzzy overlay model.",
+      "Interpreted candidate areas based on terrain, distance from rivers and settlements, geological protection, and road accessibility."
     ],
     outputs: [
-      "Landfill suitability map.",
-      "Spatial constraint and exclusion-zone analysis.",
-      "Candidate area identification for planning discussion.",
-      "Cartographic outputs for communicating suitability results."
-    ],
-    tools: [
-      "QGIS",
-      "ArcGIS Pro",
-      "Spatial Overlay",
-      "Buffer Analysis",
-      "Multi-Criteria Analysis",
-      "Cartography"
-    ],
-    links: []
-  },
-
-  ikea: {
-    category: "Location Intelligence",
-    title: "IKEA Franchise Location Expansion Analysis",
-    summary:
-      "GIS-based business location analysis for franchise expansion and market reach assessment.",
-    images: [
-      "assets/images/projects/ikea-1.jpg",
-      "assets/images/projects/ikea-2.jpg"
-    ],
-    overview:
-      "This project explored potential IKEA franchise or retail expansion locations using GIS-based location intelligence. The analysis considered population distribution, accessibility, transport connectivity, market reach, and spatial competition factors.",
-    methods: [
-      "Prepared spatial datasets related to population, road access, urban centers, and existing commercial locations.",
-      "Analyzed accessibility and potential catchment areas for candidate locations.",
-      "Evaluated market reach and spatial suitability using GIS-based decision-support methods.",
-      "Created maps and visual summaries to communicate potential expansion areas."
-    ],
-    outputs: [
-      "Candidate location suitability maps.",
-      "Accessibility and catchment area analysis.",
-      "Market reach visualization.",
-      "Spatial decision-support outputs for retail location planning."
+      "Fuzzy weighted-scoring suitability map.",
+      "Multiplicative fuzzy overlay suitability map.",
+      "Identification of two strong landfill candidate areas in the southeastern part of the study area.",
+      "Comparison of flexible and conservative decision-support approaches.",
+      "Contribution to raster preprocessing, fuzzy membership design, overlay modeling, result interpretation, and cartographic outputs."
     ],
     tools: [
       "GIS",
-      "Accessibility Analysis",
-      "Market Area Analysis",
-      "Location Intelligence",
-      "Spatial Decision Support"
-    ],
-    links: []
-  },
-
-  urbanVegetation: {
-    category: "Urban Remote Sensing",
-    title: "Urban Vegetation Mapping",
-    summary:
-      "High-resolution urban vegetation mapping using aerial imagery and deep learning.",
-    images: [
-      "assets/images/projects/urban-vegetation-1.jpg",
-      "assets/images/projects/urban-vegetation-2.jpg"
-    ],
-    overview:
-      "This project focused on mapping urban vegetation from high-resolution aerial imagery using deep learning methods. The work supports urban ecological assessment, green infrastructure analysis, and spatial understanding of vegetation distribution in complex urban environments.",
-    methods: [
-      "Prepared high-resolution aerial imagery for vegetation extraction.",
-      "Supported image classification and deep-learning-based mapping workflows.",
-      "Evaluated vegetation mapping outputs in urban environments with mixed land-cover patterns.",
-      "Prepared spatial outputs suitable for GIS visualization and further analysis."
-    ],
-    outputs: [
-      "Urban vegetation classification outputs.",
-      "Spatial layers representing vegetation distribution.",
-      "Map products supporting urban green infrastructure assessment.",
-      "Contribution to publication-oriented research workflow."
-    ],
-    tools: [
-      "Aerial Imagery",
-      "Deep Learning",
-      "Image Classification",
-      "GIS",
-      "Urban Vegetation Mapping"
+      "Raster Analysis",
+      "Spatial Analyst",
+      "Raster Calculator",
+      "Fuzzy Logic",
+      "Suitability Modeling",
+      "DEM Processing",
+      "Environmental Planning",
+      "Cartographic Visualization"
     ],
     links: []
   },
 
   mangrove: {
-    category: "Coastal Remote Sensing",
-    title: "Multitemporal Mangrove and Aquaculture Mapping",
+    category: "Coastal Remote Sensing & Field Ecology",
+    title: "Mangrove and Aquaculture Dynamics in East Kalimantan",
     summary:
-      "Monitoring mangrove and aquaculture dynamics using multi-temporal satellite imagery.",
+      "A remote sensing and field-based ecosystem monitoring project analyzing mangrove loss, aquaculture expansion, LAI, biomass, and carbon stock from 1990 to 2019.",
     images: [
-      "assets/images/projects/mangrove-1.jpg",
-      "assets/images/projects/mangrove-2.jpg"
+      "assets/images/apcrs-sentinel.jpg",
+      "assets/images/apcrs-tree.jpg",
+      "assets/images/apcrs-nipah.jpg",
+      "assets/images/mangrove.png",
+      "assets/images/pond.png",
+      "assets/images/apcrs-field.jpg",
+      "assets/images/apcrs-hemi.jpg",
+      "assets/images/apcrs_poster.jpg"
     ],
     overview:
-      "This project used remote sensing and GIS workflows to monitor mangrove and aquaculture changes over time. The analysis supported coastal environmental monitoring and helped assess landscape dynamics in Indonesian coastal areas.",
+      "This project analyzed long-term mangrove forest loss, aquaculture pond expansion, canopy structure, and biomass-related carbon stock in East Kalimantan, Indonesia. The work combined multi-temporal Landsat and Sentinel-2 imagery, field measurements, machine learning classification, object-based mapping, hemispherical photography, and NDVI-based biophysical modeling.",
     methods: [
-      "Processed multi-temporal satellite imagery from sensors such as Landsat, Sentinel, and Planet NICFI.",
-      "Used Google Earth Engine for image preparation, classification, and temporal analysis.",
-      "Mapped mangrove and aquaculture distribution across different time periods.",
-      "Analyzed spatial change patterns to support environmental monitoring and reporting."
+      "Processed Landsat imagery for 1990 and 2000 and Sentinel-2 imagery for 2019 in Google Earth Engine.",
+      "Generated annual mosaics and spectral indices including NDVI, NDBI, MNDWI, AWEI, CMRI, and Mangrove Index.",
+      "Used Random Forest classification for historical mangrove and pond mapping and GEOBIA/visual interpretation for detailed 2019 mapping.",
+      "Processed hemispherical canopy photographs in ImageJ to estimate Leaf Area Index from sky, trunk, and leaf proportions.",
+      "Used DBH field measurements, species-specific allometric equations, and NDVI regression models to estimate LAI, biomass, and carbon stock spatially."
     ],
     outputs: [
-      "Multitemporal mangrove and aquaculture maps.",
-      "Change detection outputs showing coastal landscape dynamics.",
-      "Spatial datasets supporting conservation and coastal management.",
-      "Publication and technical reporting contributions."
+      "Mangrove and pond maps for 1990, 2000, and 2019.",
+      "Change analysis showing mangrove decline from 268,147 ha in 1990 to 215,514 ha in 2019, and pond expansion from 9,935 ha to 86,471 ha.",
+      "Classification accuracies of 95.75% for 1990 and 93.95% for 2000.",
+      "Spatial assessment of mangrove-to-pond conversion, including strong conversion pressure in the Mahakam Delta.",
+      "Contribution to satellite processing, spectral-index generation, classification support, fieldwork, LAI estimation, biomass/carbon modeling, and map outputs."
     ],
     tools: [
       "Google Earth Engine",
       "Landsat",
-      "Sentinel",
-      "Planet NICFI",
-      "Remote Sensing",
-      "Change Detection"
+      "Sentinel-2",
+      "Random Forest",
+      "GEOBIA",
+      "NDVI",
+      "ImageJ",
+      "Hemispherical Photography",
+      "LAI Estimation",
+      "Allometric Equations",
+      "Carbon Stock Estimation",
+      "Spatial Change Detection"
     ],
     links: []
   },
@@ -267,31 +258,41 @@ const projectData = {
     category: "Marine Remote Sensing",
     title: "Shallow-Water Habitat Mapping",
     summary:
-      "Remote sensing classification of coral, seagrass, sand, and rubble habitats in Indonesian coastal waters.",
+      "Benthic habitat mapping using field survey data, underwater photography, CPCE interpretation, remote sensing preprocessing, and Lyzenga water-column correction.",
     images: [
-      "assets/images/projects/habitat-1.jpg",
-      "assets/images/projects/habitat-2.jpg"
+      "assets/images/benthic-gt1.jpg",
+      "assets/images/benthic-gt2.jpg",
+      "assets/images/benthic-gt3.jpg",
+      "assets/images/benthic-img.jpg",
+      "assets/images/benthic-img-grey.jpg",
+      "assets/images/benthic-img-color.jpg"
     ],
     overview:
-      "This project applied remote sensing methods to classify shallow-water coastal habitats, including coral, seagrass, sand, and rubble. The outputs supported coastal and marine conservation planning by providing spatial information on benthic habitat distribution.",
+      "This project mapped shallow-water benthic habitats by combining field survey data, underwater photography, and remote sensing image processing. The aim was to classify coastal habitat types such as coral, seagrass, algae, sand, rubble, and mixed substrates in shallow marine environments.",
     methods: [
-      "Prepared satellite imagery for shallow-water habitat classification.",
-      "Applied remote sensing classification techniques to distinguish benthic habitat classes.",
-      "Validated and interpreted classification outputs for coastal conservation purposes.",
-      "Produced maps and spatial datasets for marine planning and reporting."
+      "Designed field sampling locations and used a self-produced 50 cm x 50 cm PVC quadrat grid for benthic observations.",
+      "Collected underwater photographs with a waterproof camera and interpreted benthic cover percentages using CPCE.",
+      "Prepared imagery by clipping the study area, masking land and deep-water areas, and enhancing visible bands for shallow-water analysis.",
+      "Applied Lyzenga water-column correction using sand samples from different depth zones to reduce depth-related spectral variation.",
+      "Classified corrected imagery into major shallow-water habitat classes and validated results with field and CPCE reference data."
     ],
     outputs: [
-      "Shallow-water habitat classification maps.",
-      "Spatial layers for coral, seagrass, sand, and rubble classes.",
-      "Coastal GIS outputs supporting marine conservation planning.",
-      "Technical and publication-oriented map products."
+      "Classified shallow-water habitat map showing benthic habitat distribution.",
+      "Field reference dataset based on quadrat observations and underwater photographs.",
+      "CPCE-derived benthic cover statistics.",
+      "Water-column-corrected imagery and final cartographic visualization.",
+      "Improved connection between observed seabed conditions and satellite-based habitat classification."
     ],
     tools: [
+      "Field Survey",
+      "PVC Quadrat",
+      "Underwater Photography",
+      "CPCE",
       "Remote Sensing",
-      "Satellite Imagery",
-      "Coastal GIS",
+      "Lyzenga Correction",
       "Habitat Classification",
-      "Marine Conservation"
+      "GIS",
+      "Map Layout"
     ],
     links: []
   }
