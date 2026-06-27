@@ -242,6 +242,16 @@ section {
   margin-bottom: 18px;
 }
 
+.publication-list a {
+  color: #1d4ed8;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.publication-list a:hover {
+  text-decoration: underline;
+}
+
 /* ------------------------------
    Contact Section
 ------------------------------ */
