@@ -206,8 +206,12 @@ section {
 }
 
 .about p {
-  max-width: 950px;
+  max-width: 900px;
   font-size: 1.05rem;
+}
+
+.about p + p {
+  margin-top: 6px;
 }
 
 /* ------------------------------
@@ -613,6 +617,18 @@ section {
 
 .modal-text p:last-child {
   margin-bottom: 0;
+}
+
+.modal-text {
+  max-width: 860px;
+}
+
+.modal-section + .modal-section {
+  padding-top: 4px;
+}
+
+.modal-section li {
+  line-height: 1.55;
 }
 
 .modal-section ul {
