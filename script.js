@@ -103,8 +103,8 @@ const projectData = {
     "title": "Green Roof Detection in Baden-Württemberg",
     "summary": "A state-scale green roof detection workflow combining LoD2 roof-plane geometry with PlanetScope multispectral imagery. Random Forest classification produced a probability-based 2025 inventory with multiple confidence thresholds for planning and validation.",
     "images": [
-      "assets/images/green_roof_poster.jpg",
-      "assets/images/green-roof-detection.png"
+      "assets/images/green-roof-detection.png",
+      "assets/images/green_roof_poster.jpg"
     ],
     "overview": [
       "For my master’s thesis, I developed a roof-plane-level green roof detection workflow for Baden-Württemberg, Germany. The objective was to create a scalable 2025 inventory by combining official LoD2 CityGML building models with multispectral PlanetScope imagery.",
