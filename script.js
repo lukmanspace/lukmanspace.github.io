@@ -44,7 +44,7 @@ const projectData = {
     ],
     "links": [
       {
-        "label": "View Marxan Case Study",
+        "label": "View Full Article on Marxan Solutions",
         "url": "https://marxansolutions.org/community/designing-marine-protected-area-networks-in-indonesia/"
       }
     ]
@@ -139,7 +139,12 @@ const projectData = {
       "CityGML/LoD2",
       "PlanetScope"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Explore Interactive Green Roof Map",
+        "url": "https://lukmanspace.github.io/green-roof-bw-map/"
+      }
+    ]
   },
   "landfill": {
     "category": "GIS Suitability Analysis",
