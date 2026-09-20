@@ -107,7 +107,7 @@ const projectData = {
       "assets/images/green_roof_poster.jpg"
     ],
     "overview": [
-      "For my master’s thesis, I developed a roof-plane-level green roof detection workflow for Baden-Württemberg, Germany. The objective was to create a scalable 2025 inventory by combining official LoD2 CityGML building models with multispectral PlanetScope imagery.",
+      "As part of research with HFT Stuttgart and LGL Baden-Württemberg, I developed a state-scale green-roof detection workflow for Baden-Württemberg, Germany. The objective was to create a scalable 2025 inventory by combining official LoD2 CityGML building models with multispectral PlanetScope imagery.",
       "The pipeline extracted roof geometry and semantic attributes, including slope, area, aspect, height, roof type, and building function, then combined them with seasonal spectral and NDVI features. I manually labelled roof planes in Stuttgart, Karlsruhe, Freiburg im Breisgau, and Tübingen and compared Random Forest and Multilayer Perceptron models using Leave-One-City-Out validation.",
       "Random Forest performed best and was used for state-wide inference. The final product was a probability-based inventory rather than a single rigid binary layer, allowing balanced and high-confidence thresholds to support different planning and verification needs."
     ],
